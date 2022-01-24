@@ -5,8 +5,8 @@ from instapy import InstaPy
 from instapy import smart_run
 import time
 
-insta_username = 'stop.waiting.for.friday'
-insta_password = 'djangoreinhardt123'
+insta_username = ''
+insta_password = ''
 
 for x in range(10000):
     print("this is " + str(x) + " time")
@@ -36,13 +36,13 @@ for x in range(10000):
 
                                      notify_me=True,
                                      peak_follows_hourly=65, #hourly follow limit
-                                     peak_follows_daily=500) #daily follow limit
+                                     peak_follows_daily=400) #daily follow limit
                                      #peak_unfollows_hourly=25,
                                      #peak_unfollows_daily=300)
 
 
 
-        session.follow_user_followers(['victoriassecret'], amount=200, #'insta_username', amount of user followers
+        session.follow_user_followers(['in.a.relationship.with.freedom', 'victoriassecret'], amount=5000, #'insta_username', amount of user followers
 
                                     randomize=False, interact=False)
 
