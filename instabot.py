@@ -1,3 +1,6 @@
+### This script follows 65 users per hour 
+
+
 from instapy import InstaPy
 from instapy import smart_run
 import time
@@ -32,14 +35,14 @@ for x in range(10000):
                                      sleepyhead=True, stochastic_flow=True,
 
                                      notify_me=True,
-                                     peak_follows_hourly=65,
-                                     peak_follows_daily=500)
+                                     peak_follows_hourly=65, #hourly follow limit
+                                     peak_follows_daily=500) #daily follow limit
                                      #peak_unfollows_hourly=25,
                                      #peak_unfollows_daily=300)
 
 
 
-        session.follow_user_followers(['victoriassecret'], amount=200, #find users amount
+        session.follow_user_followers(['victoriassecret'], amount=200, #'insta_username', amount of user followers
 
                                     randomize=False, interact=False)
 
