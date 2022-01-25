@@ -5,8 +5,8 @@ from instapy import InstaPy
 from instapy import smart_run
 import time
 
-insta_username = ''
-insta_password = ''
+insta_username = 'stop.waiting.for.friday'
+insta_password = 'djangoreinhardt123'
 
 for x in range(10000):
     print("this is " + str(x) + " time")
